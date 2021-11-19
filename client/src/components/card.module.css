@@ -1,0 +1,59 @@
+.card{
+    margin-bottom: 30px;
+    width: 300px;
+    height: auto;
+
+    position: relative;
+
+    border: 2px solid black;
+    display: inline-block;
+}
+
+.photo{
+    width: 100px;
+    margin-right: 5px;
+}
+
+.name{
+    font-size: 1.2em;
+    margin: 0;
+    position: absolute;
+    display: inline;
+}
+
+.species{
+    position: absolute;
+    top: 35px
+}
+
+.status{
+    width: 15px;
+    height: 15px;
+
+    margin-left: 5px;
+
+    border-radius: 50%;
+    /* border: 0.5px solid black; */
+
+    display: inline-block;
+}
+
+.gender{
+    margin-left: 5px;
+}
+
+.episode{
+    margin-left: 5px;
+}
+
+.Alive{
+    background-color: rgb(31, 193, 55);
+}
+
+.Dead{
+    background-color: rgb(243, 77, 74);
+}
+
+.unknown{
+    background-color: rgb(148, 148, 148);
+}
