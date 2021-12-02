@@ -1,11 +1,24 @@
 import { Route } from 'react-router-dom';
 import './App.css';
+import {useEffect} from "react";
+import { useDispatch, useSelector } from 'react-redux';
 
 import Card from './components/Card.jsx';
 import SearchBar from './components/SearchBar';
 import {results} from "./myDB.js";
 
+import {getCharacters} from "./store/action.js";
+
 function App() {
+  const dispatch = useDispatch();
+  const characters = useSelector(state => state)
+
+  useEffect(() => {
+    dispatch(getCharacters());
+    console.log(characters)
+  }, [])
+
+
   return (
     <div className="App">
       <SearchBar/>
